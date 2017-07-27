@@ -12,6 +12,7 @@ object Head {
 
   type Aux[HL <: HList, H] = Head[HL] { type R = H }
 
+  implicit val nilHead = new Head[HNil] { type R = HNil }
   implicit def head[H, HL <: ::[H, _]] = new Head[HL] { type R = H }
 
 }

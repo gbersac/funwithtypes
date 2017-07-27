@@ -16,6 +16,7 @@ class HListSpec extends FlatSpec with ShouldMatchers {
   "HList" should "get head" in {
     def head[HL <: HList, H](implicit head: Head.Aux[HL, H]): Unit = ()
 
+    head[HNil, HNil]
     head[HL, String]
   }
 

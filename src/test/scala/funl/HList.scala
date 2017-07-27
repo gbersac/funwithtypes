@@ -6,9 +6,9 @@ import org.scalatest.matchers.ShouldMatchers
 class HListSpec extends FlatSpec with ShouldMatchers {
 
   /* should compile
-  type z = 
-  type one = 
-  type two = 
+  type z =
+  type one =
+  type two =
 
   type HL = String::Int::Long::HNil
   */
@@ -17,6 +17,7 @@ class HListSpec extends FlatSpec with ShouldMatchers {
     /* should compile
     def head[HL <: HList, H](implicit head: Head[HL, H]): Unit = ()
 
+    head[HNil, HNil]
     head[HL, String]
     */
 
